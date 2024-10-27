@@ -31,6 +31,7 @@ For the test servers, I am using [Docker](https://www.docker.com/) to setup test
 If you'd like to follow along, feel free doing so and follow these steps
 
 ## Getting Ansible
+
 To get Ansible, run:
 ```
 # Using Python
@@ -39,6 +40,21 @@ pip install ansible
 # Using Debian package manager
 sudo apt install ansible
 ```
+
+OR
+
+You can create a Python Virtual Environment and use the repo's `requirements.txt`
+
+```
+# Leave this out if you want to store the venv in a different location
+mkdir ~/venv
+
+python3 -m venv ansible-playbook
+source ~/venv/ansible-playbook/bin/activate # Replace if venv location is different
+pip install -r requirements.txt
+```
+
+
 ## Create Docker image
 
 ### SSH keys for containers
