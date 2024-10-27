@@ -1,0 +1,3 @@
+[ansible-targets]
+example.host1.com
+example.host2.com
