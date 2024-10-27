@@ -8,12 +8,12 @@
     ansible.builtin.apt:
       update_cache: yes
 
-  - name: Install apache package
+  - name: Remove apache package
     ansible.builtin.apt:
       name: apache2
-      state: latest
+      state: absent
 
-  - name: Add PHP support for apache
+  - name: Remove PHP support for apache
     ansible.builtin.apt:
       name: libapache2-mod-php
-      state: latest
+      state: absent

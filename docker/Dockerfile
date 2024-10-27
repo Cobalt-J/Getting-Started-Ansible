@@ -26,5 +26,8 @@ RUN mkdir /var/run/sshd && \
 # Expose SSH port
 EXPOSE 22
 
+# Expose http
+EXPOSE 80
+
 # Start the SSH service
 CMD ["/usr/sbin/sshd", "-D"]
