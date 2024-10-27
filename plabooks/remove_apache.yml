@@ -4,10 +4,6 @@
   become: false
 
   tasks:
-  - name: Update repository index
-    ansible.builtin.apt:
-      update_cache: yes
-
   - name: Remove apache package
     ansible.builtin.apt:
       name: apache2
