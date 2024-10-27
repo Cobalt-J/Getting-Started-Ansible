@@ -150,3 +150,4 @@ The test environment is ready and you can start doing your own Ansible goodness!
 - Create my first ansible config file
 - Created my first inventory
 - Created my first playbook that install apache2 in each host
+  - Created playbook that removes apache2
